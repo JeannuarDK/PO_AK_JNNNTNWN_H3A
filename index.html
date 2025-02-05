@@ -3,7 +3,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
-   Netflix Clone
+   National Geographic Style Page
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
@@ -15,150 +15,220 @@
         }
   </style>
  </head>
- <body class="bg-black text-white">
+ <body class="bg-gray-100">
   <!-- Header -->
-  <header class="flex justify-between items-center p-4 bg-black bg-opacity-75 fixed w-full z-10">
-   <div class="flex items-center space-x-4">
-    <img alt="Netflix logo with red background and white text" class="h-8" height="50" src="https://storage.googleapis.com/a1aa/image/atYbD50v__a8uY4S6YVp7F5_UQZPUgwXA2mFp1M-0iU.jpg" width="100"/>
-    <nav class="hidden md:flex space-x-4">
-     <a class="hover:text-gray-400" href="#">
-      Home
-     </a>
-     <a class="hover:text-gray-400" href="#">
-      TV Shows
-     </a>
-     <a class="hover:text-gray-400" href="#">
-      Movies
-     </a>
-     <a class="hover:text-gray-400" href="#">
-      New &amp; Popular
-     </a>
-     <a class="hover:text-gray-400" href="#">
-      My List
-     </a>
+  <header class="bg-yellow-500 text-white p-4">
+   <div class="container mx-auto flex justify-between items-center">
+    <h1 class="text-3xl font-bold">
+     National Geographic
+    </h1>
+    <nav>
+     <ul class="flex space-x-4">
+      <li>
+       <a class="hover:underline" href="#">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Nature
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Science
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Travel
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Photography
+       </a>
+      </li>
+     </ul>
     </nav>
    </div>
-   <div class="flex items-center space-x-4">
-    <i class="fas fa-search hover:text-gray-400 cursor-pointer">
-    </i>
-    <i class="fas fa-bell hover:text-gray-400 cursor-pointer">
-    </i>
-    <img alt="User avatar placeholder image" class="h-8 w-8 rounded-full" height="40" src="https://storage.googleapis.com/a1aa/image/G-NPB0Sc9BT-QjDWMzFmNhYcqRfMg0Rralq2tuNKvBs.jpg" width="40"/>
-   </div>
   </header>
-  <!-- Hero Section -->
-  <section class="relative h-screen flex items-center justify-center">
-   <img alt="Hero image placeholder with black background and white text" class="absolute inset-0 w-full h-full object-cover opacity-50" height="1080" src="https://storage.googleapis.com/a1aa/image/Ht5Io6tD9PRbrmqCHkApSxCC9mBZGTIYZoH08F_r6F8.jpg" width="1920"/>
-   <div class="relative z-10 text-center">
-    <h1 class="text-5xl font-bold mb-4">
-     Featured Movie Title
-    </h1>
-    <p class="text-lg mb-6">
-     This is a brief description of the featured movie. It gives an overview of the plot and main characters.
-    </p>
-    <button class="bg-white text-black px-6 py-3 rounded-md font-semibold mr-4">
-     <i class="fas fa-play mr-2">
-     </i>
-     Play
-    </button>
-    <button class="bg-gray-700 bg-opacity-75 text-white px-6 py-3 rounded-md font-semibold">
-     <i class="fas fa-info-circle mr-2">
-     </i>
-     More Info
-    </button>
-   </div>
-  </section>
-  <!-- Content Section -->
-  <section class="mt-8 px-4 md:px-8">
-   <!-- Row 1 -->
-   <div class="mb-8">
-    <h2 class="text-2xl font-bold mb-4">
-     Trending Now
-    </h2>
-    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
-     <img alt="Movie 1 placeholder image with dark background and white text" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/qqOcz6vGibASzo2U1IKnddgdTCodo2nezxbxi9f9NkY.jpg" width="300"/>
-     <img alt="Movie 2 placeholder image with dark background and white text" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/I9b80ZC_aJEz5934wn3FR--X0U2dZ30WStSyMX1-BLI.jpg" width="300"/>
-     <img alt="Movie 3 placeholder image with dark background and white text" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/qM7j2Iih8xv6R20iVhAQ2Biq_H9Hskui6SfGQ5Bt8Fg.jpg" width="300"/>
-     <img alt="Movie 4 placeholder image with dark background and white text" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/7qrpjeylbRWn-wRpBsKwWOQLLKhFY5cAL0oTs19pr3g.jpg" width="300"/>
-     <img alt="Movie 5 placeholder image with dark background and white text" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/cij-7GBMXc-9Vy9JVCgLf6B8pI0rQBd_zxjoM5_8Cj0.jpg" width="300"/>
+  <!-- Main Content -->
+  <main class="container mx-auto p-4">
+   <!-- Featured Article -->
+   <section class="mb-8">
+    <div class="relative group">
+     <img alt="A stunning landscape with mountains and a river under a clear blue sky" class="w-full h-64 object-cover" height="600" src="https://storage.googleapis.com/a1aa/image/JprLKPaoDoxKjx9NXjCsJf6y7W8In5JkkRMsi7u2d-c.jpg" width="1200"/>
+     <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4 group-hover:bg-opacity-75 transition duration-300">
+      <h2 class="text-2xl font-bold">
+       Exploring the Untamed Wilderness
+      </h2>
+      <p class="mt-2">
+       Discover the beauty and challenges of the world's most remote places.
+      </p>
+     </div>
     </div>
-   </div>
-   <!-- Row 2 -->
-   <div class="mb-8">
+   </section>
+   <!-- Latest News -->
+   <section class="mb-8">
     <h2 class="text-2xl font-bold mb-4">
-     Top Picks for You
+     Latest News
     </h2>
-    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
-     <img alt="Movie 6 placeholder image with dark background and white text" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/S_aX7eUDAcE8J3d_sWBuxlwklrTIxYH89MHIjSKpOj8.jpg" width="300"/>
-     <img alt="Movie 7 placeholder image with dark background and white text" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/nc0iVbruuJEB4dkOveEkzB3om5_69rwoU399ZjJnQTw.jpg" width="300"/>
-     <img alt="Movie 8 placeholder image with dark background and white text" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/H92rgfNDnb-hWzWcobllUE564S4x7YPlwrCenURgAa0.jpg" width="300"/>
-     <img alt="Movie 9 placeholder image with dark background and white text" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/kIM-zJu4bbcPdP0bzEW7quj_g1Cpn4jWDycqyO3p2LI.jpg" width="300"/>
-     <img alt="Movie 10 placeholder image with dark background and white text" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/gZYv85Oqye-YA-fv-kNk1UyTDq0puiIfQOYqfpnDP-k.jpg" width="300"/>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+     <article class="bg-white p-4 shadow-md hover:shadow-lg transition duration-300">
+      <img alt="A close-up of a rare bird species in its natural habitat" class="w-full h-48 object-cover mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/nhMAwau2-jBamHAk-5Rh6NckMyW6dvjriwMmAk0Xyz4.jpg" width="400"/>
+      <h3 class="text-xl font-bold">
+       Rare Bird Species Discovered
+      </h3>
+      <p class="mt-2">
+       Scientists have discovered a new species of bird in the Amazon rainforest.
+      </p>
+      <a class="text-yellow-500 hover:underline mt-2 inline-block" href="#">
+       Read more
+      </a>
+     </article>
+     <article class="bg-white p-4 shadow-md hover:shadow-lg transition duration-300">
+      <img alt="A group of scientists conducting research in Antarctica" class="w-full h-48 object-cover mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/Eiqm-r7NZ7eWPvQpSJn1sfKciO68oij03BlhRehBFtI.jpg" width="400"/>
+      <h3 class="text-xl font-bold">
+       Antarctic Expedition
+      </h3>
+      <p class="mt-2">
+       A team of researchers embarks on a journey to study climate change in Antarctica.
+      </p>
+      <a class="text-yellow-500 hover:underline mt-2 inline-block" href="#">
+       Read more
+      </a>
+     </article>
+     <article class="bg-white p-4 shadow-md hover:shadow-lg transition duration-300">
+      <img alt="A beautiful coral reef teeming with marine life" class="w-full h-48 object-cover mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/MNSC6f5YS8CUX0G2GFiDaaIIdlQtyM-YPE63Eru1fEA.jpg" width="400"/>
+      <h3 class="text-xl font-bold">
+       Coral Reefs in Danger
+      </h3>
+      <p class="mt-2">
+       The world's coral reefs are facing unprecedented threats from climate change.
+      </p>
+      <a class="text-yellow-500 hover:underline mt-2 inline-block" href="#">
+       Read more
+      </a>
+     </article>
+     <article class="bg-white p-4 shadow-md hover:shadow-lg transition duration-300">
+      <img alt="A majestic tiger prowling through the jungle" class="w-full h-48 object-cover mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/JGSVGXRlp4lktKtV3y6iLqrqyHQZQOQ-eRVGaQf520M.jpg" width="400"/>
+      <h3 class="text-xl font-bold">
+       Tiger Conservation Efforts
+      </h3>
+      <p class="mt-2">
+       Conservationists are working tirelessly to protect the endangered tiger population.
+      </p>
+      <a class="text-yellow-500 hover:underline mt-2 inline-block" href="#">
+       Read more
+      </a>
+     </article>
+     <article class="bg-white p-4 shadow-md hover:shadow-lg transition duration-300">
+      <img alt="A breathtaking view of the Northern Lights in the night sky" class="w-full h-48 object-cover mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/GpOWjxHeJVnsr9UQtNWiRWP-USK0EXtkDUBvK-5TKsU.jpg" width="400"/>
+      <h3 class="text-xl font-bold">
+       Northern Lights Phenomenon
+      </h3>
+      <p class="mt-2">
+       Witness the awe-inspiring beauty of the Northern Lights in the Arctic Circle.
+      </p>
+      <a class="text-yellow-500 hover:underline mt-2 inline-block" href="#">
+       Read more
+      </a>
+     </article>
+     <article class="bg-white p-4 shadow-md hover:shadow-lg transition duration-300">
+      <img alt="A dense forest with towering trees and lush greenery" class="w-full h-48 object-cover mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/kDUIAbUzmy2qYX4YkvhGv_GCkon-gcrMbMJGXQ4MpSY.jpg" width="400"/>
+      <h3 class="text-xl font-bold">
+       Forest Conservation Initiatives
+      </h3>
+      <p class="mt-2">
+       Efforts are being made globally to preserve and protect our forests.
+      </p>
+      <a class="text-yellow-500 hover:underline mt-2 inline-block" href="#">
+       Read more
+      </a>
+     </article>
     </div>
-   </div>
-   <!-- Row 3 -->
-   <div class="mb-8">
+   </section>
+   <!-- Photo Gallery -->
+   <section class="mb-8">
     <h2 class="text-2xl font-bold mb-4">
-     New Releases
+     Photo Gallery
     </h2>
-    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
-     <img alt="Movie 11 placeholder image with dark background and white text" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/H18hWik6hNDFy6YWHon-0EY7Gc_7BwhgI0Y05nH8YS4.jpg" width="300"/>
-     <img alt="Movie 12 placeholder image with dark background and white text" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/6lavuVA7ICek-iBJ4uRaja72u1TeuS5Z9mANdWaYLkk.jpg" width="300"/>
-     <img alt="Movie 13 placeholder image with dark background and white text" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/kFXL3QJU0P3_6t5wcNcOV-BdUY2w0iCNEFATRaUqCes.jpg" width="300"/>
-     <img alt="Movie 14 placeholder image with dark background and white text" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/dg-RTR0bX0SRtUEzL7ThTX3KobAiZQZAe6iypY_TX8c.jpg" width="300"/>
-     <img alt="Movie 15 placeholder image with dark background and white text" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/N689WiFgKngIo4Ih0dyxGC2mTBIy0B26QzenOnK2WBI.jpg" width="300"/>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+     <div class="relative group">
+      <img alt="A stunning sunset over a serene lake" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/Qtt2TwBjbD3FUtHggV9dLT-Ph2pdJOLcLjq4vnI3Y88.jpg" width="400"/>
+      <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-2 group-hover:bg-opacity-75 transition duration-300">
+       <p>
+        Sunset over the Lake
+       </p>
+      </div>
+     </div>
+     <div class="relative group">
+      <img alt="A close-up of a vibrant flower in bloom" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/M5K58zlPh-r9PQPlPDluz2q_wjBTS0PbTO4ueLqTZY8.jpg" width="400"/>
+      <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-2 group-hover:bg-opacity-75 transition duration-300">
+       <p>
+        Flower in Bloom
+       </p>
+      </div>
+     </div>
+     <div class="relative group">
+      <img alt="A panoramic view of a mountain range under a clear sky" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/_7q5RVzZdmtMuM2fRKcvdIOcYv66KJcvbyVNskW0jcA.jpg" width="400"/>
+      <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-2 group-hover:bg-opacity-75 transition duration-300">
+       <p>
+        Mountain Range
+       </p>
+      </div>
+     </div>
+     <div class="relative group">
+      <img alt="A herd of elephants walking through the savannah" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/50leAihJ7pvxC9ddrUnqpCXq9KrHd4IA6zoIx-caXr4.jpg" width="400"/>
+      <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-2 group-hover:bg-opacity-75 transition duration-300">
+       <p>
+        Elephants in the Savannah
+       </p>
+      </div>
+     </div>
+     <div class="relative group">
+      <img alt="A crystal-clear waterfall cascading down rocks" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/bXMVp4CQvdmLkM8zCYmRpFSo2v5Kz128__vqitzmd2g.jpg" width="400"/>
+      <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-2 group-hover:bg-opacity-75 transition duration-300">
+       <p>
+        Waterfall
+       </p>
+      </div>
+     </div>
+     <div class="relative group">
+      <img alt="A dense forest with sunlight filtering through the trees" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/QS16bdTmD-EyAFgN0BGsuJq5DfcngOc8V5gr6cjeHgU.jpg" width="400"/>
+      <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-2 group-hover:bg-opacity-75 transition duration-300">
+       <p>
+        Sunlight in the Forest
+       </p>
+      </div>
+     </div>
     </div>
-   </div>
-  </section>
+   </section>
+  </main>
   <!-- Footer -->
-  <footer class="bg-black bg-opacity-75 py-8 mt-8">
-   <div class="container mx-auto px-4 md:px-8">
-    <div class="flex flex-col md:flex-row justify-between items-center">
-     <div class="flex space-x-4 mb-4 md:mb-0">
-      <a class="hover:text-gray-400" href="#">
-       Audio and Subtitles
-      </a>
-      <a class="hover:text-gray-400" href="#">
-       Help Center
-      </a>
-      <a class="hover:text-gray-400" href="#">
-       Gift Cards
-      </a>
-      <a class="hover:text-gray-400" href="#">
-       Media Center
-      </a>
-      <a class="hover:text-gray-400" href="#">
-       Investor Relations
-      </a>
-      <a class="hover:text-gray-400" href="#">
-       Jobs
-      </a>
-      <a class="hover:text-gray-400" href="#">
-       Terms of Use
-      </a>
-      <a class="hover:text-gray-400" href="#">
-       Privacy
-      </a>
-      <a class="hover:text-gray-400" href="#">
-       Legal Notices
-      </a>
-      <a class="hover:text-gray-400" href="#">
-       Corporate Information
-      </a>
-      <a class="hover:text-gray-400" href="#">
-       Contact Us
-      </a>
-     </div>
-     <div class="flex space-x-4">
-      <i class="fab fa-facebook-f hover:text-gray-400 cursor-pointer">
+  <footer class="bg-gray-800 text-white p-4">
+   <div class="container mx-auto text-center">
+    <p>
+     © 2023 National Geographic. All rights reserved.
+    </p>
+    <div class="flex justify-center space-x-4 mt-2">
+     <a class="hover:text-yellow-500" href="#">
+      <i class="fab fa-facebook-f">
       </i>
-      <i class="fab fa-instagram hover:text-gray-400 cursor-pointer">
+     </a>
+     <a class="hover:text-yellow-500" href="#">
+      <i class="fab fa-twitter">
       </i>
-      <i class="fab fa-twitter hover:text-gray-400 cursor-pointer">
+     </a>
+     <a class="hover:text-yellow-500" href="#">
+      <i class="fab fa-instagram">
       </i>
-      <i class="fab fa-youtube hover:text-gray-400 cursor-pointer">
+     </a>
+     <a class="hover:text-yellow-500" href="#">
+      <i class="fab fa-youtube">
       </i>
-     </div>
+     </a>
     </div>
    </div>
   </footer>
