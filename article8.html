@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="favicon.png" type="image/png"/>
+  <title>Tectonische en Geologische Ontwikkeling van Aruba - AK PO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      opacity: 0;
+      transition: opacity 1s ease, background-color 0.5s ease, color 0.5s ease;
+    }
+    .hover-effect:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .dark-mode {
+      background-color: rgb(25, 25, 25);
+      color: #ffffff;
+    }
+    .light-mode {
+      background-color: #ffffff;
+      color: #000000;
+    }
+    .header {
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    .dark-mode .header {
+      background-color: #ffffff;
+      color: #000000;
+    }
+    .light-mode .header {
+      background-color: rgb(25, 25, 25);
+      color: #ffffff;
+    }
+    .article-bg {
+      transition: background-color 0.5s ease, color 0.5s ease;
+      border-radius: 30px; /* Increased border-radius */
+    }
+    .dark-mode .article-bg {
+      background-color: #0c0c0c;
+      color: #ffffff;
+    }
+    .light-mode .article-bg {
+      background-color: #f9f9f9;
+      color: #000000;
+    }
+    .article-img {
+      width: 100%;
+      max-width: 400px; /* Set a max-width for the image */
+      height: auto;
+      transition: transform 0.3s ease;
+      border-radius: 20px; /* Increased border-radius for images */
+      margin: 0 auto; /* Center the image */
+      display: block; /* Center the image */
+    }
+    .article-img:hover {
+      transform: scale(1.05);
+    }
+    .article-content {
+      max-width: 800px; /* Set a max-width for the content */
+      margin: 0 auto; /* Center the content */
+    }
+    .highlight {
+      background-color: #ffeb3b;
+      padding: 0.2rem 0.4rem;
+      border-radius: 5px;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .list-item {
+      margin-left: 1.5rem;
+      list-style-type: disc;
+    }
+    .timeline {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .timeline-item {
+      background-color: #f1f1f1;
+      padding: 1rem;
+      border-radius: 10px;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    .dark-mode .timeline-item {
+      background-color: #333333;
+      color: #ffffff;
+    }
+    .light-mode .timeline-item {
+      background-color: #f1f1f1;
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <header class="header p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold">AK PO</h1>
+      <nav>
+        <ul class="hidden md:flex space-x-4">
+          <li><a class="hover:underline" href="index.html">Home</a></li>
+          <li><a class="hover:underline" href="about.html">About Us</a></li>
+        </ul>
+        <button id="menu-btn" class="md:hidden text-2xl">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button id="theme-toggle" class="ml-4 text-2xl">
+          <i class="fas"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <div id="mobile-menu" class="hidden md:hidden p-4">
+    <ul class="space-y-4">
+      <li><a class="hover:underline" href="index.html">Home</a></li>
+      <li><a class="hover:underline" href="about.html">About Us</a></li>
+    </ul>
+  </div>
+  <main class="container mx-auto p-4">
+    <article class="article-bg p-4 rounded shadow fade-in article-content">
+      <img src="Processen.png" alt="Article 1 Image" class="article-img mb-2">
+      <h2 class="text-2xl font-bold mb-4">Tectonische en Geologische Ontwikkeling van Aruba</h2>
+      <h3 class="section-title">Belangrijke Processen</h3>
+      <ul>
+        <li class="list-item"><span class="highlight">Subductie</span> → De Caribische Plaat schuift oostwaarts onder de Zuid-Amerikaanse Plaat, wat leidt tot vulkanisme en diepzeetroggen.</li>
+        <li class="list-item"><span class="highlight">Vulkanisme</span> → Aruba’s oudste gesteenten zijn de overblijfselen van een vulkanische boog uit het Krijt. (bijv. Bij hooiberg)</li>
+        <li class="list-item"><span class="highlight">Aardbevingen</span> → Door plaatbewegingen komen aardbevingen voor, vooral bij de Caribische trog.</li>
+        <li class="list-item"><span class="highlight">Platentektoniek</span> → De interactie tussen de Caribische, Noord-Amerikaanse en Zuid-Amerikaanse platen vormt de regio.</li>
+        <li class="list-item"><span class="highlight">Erosie</span> → Afbraak van gesteente door wind, water of ijs. (bijv. Bij Ayo en Casibari)</li>
+        <li class="list-item"><span class="highlight">Sedimentatie</span> → Afzetting van zand, klei of schelpen op de bodem van de oceaan. (bijv. Bij Boca Grandi)</li>
+        <li class="list-item"><span class="highlight">Metamorfose</span> → Bestaande stenen veranderen door hitte en druk in de aarde.</li>
+      </ul>
+      <h3 class="section-title">Geologische Tijdschaal</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4 class="font-bold">Laat-Krijt (90-66 miljoen jaren geleden)</h4>
+          <p>Vorming van Aruba’s vulkanische ondergrond door subductie.</p>
+        </div>
+        <div class="timeline-item">
+          <h4 class="font-bold">Paleogeen (66-23 miljoen jaren geleden)</h4>
+          <p>Opheffing van Aruba → erosie vormt rotsformaties (Ayo, Casibari).</p>
+        </div>
+        <div class="timeline-item">
+          <h4 class="font-bold">Neogeen (23-2,6 miljoen jaren geleden)</h4>
+          <p>Kalksteenafzettingen door koraalgroei (bijv. Boca Grandi).</p>
+        </div>
+        <div class="timeline-item">
+          <h4 class="font-bold">Kwartair (2,6 miljoen jaren geleden - nu)</h4>
+          <p>Actieve breuklijnen en moderne kustvorming.</p>
+        </div>
+      </div>
+      <h3 class="section-title">Samenvatting van Geologische Gebeurtenissen</h3>
+      <ul>
+        <li class="list-item"><span class="highlight">Laat-Krijt</span> → Subductie → vulkanisme vormt Aruba’s ondergrond.</li>
+        <li class="list-item"><span class="highlight">Paleogeen</span> → Plaats Botsingen → Aruba wordt opgeheven en erodeert.</li>
+        <li class="list-item"><span class="highlight">Neogeen</span> → Koraalriffen groeien → kalksteen ontstaat.</li>
+        <li class="list-item"><span class="highlight">Kwartair</span> → Spanning langs breuklijnen → aardbevingsrisico.</li>
+      </ul>
+    </article>
+  </main>
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    
+    function applyTheme(mode) {
+      if (mode === 'dark') {
+        body.classList.add('dark-mode');
+        body.classList.remove('light-mode');
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+      } else {
+        body.classList.add('light-mode');
+        body.classList.remove('dark-mode');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+      }
+      localStorage.setItem('theme', mode);
+    }
+    
+    themeToggle.addEventListener('click', () => {
+      const newTheme = body.classList.contains('dark-mode') ? 'light' : 'dark';
+      applyTheme(newTheme);
+    });
+    
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    window.addEventListener('load', () => {
+      document.body.style.opacity = 1;
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      applyTheme(savedTheme);
+    });
+
+    window.addEventListener('beforeunload', () => {
+      document.body.style.opacity = 0;
+    });
+  </script>
+</body>
+</html>

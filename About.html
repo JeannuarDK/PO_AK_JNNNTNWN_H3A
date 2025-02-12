@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="favicon.png" type="image/png"/>
+  <title>About Us - AK PO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      opacity: 0;
+      transition: opacity 1s ease, background-color 0.5s ease, color 0.5s ease;
+    }
+    .hover-effect:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .dark-mode {
+      background-color: rgb(25, 25, 25);
+      color: #ffffff;
+    }
+    .light-mode {
+      background-color: #ffffff;
+      color: #000000;
+    }
+    .header {
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    .dark-mode .header {
+      background-color: #ffffff;
+      color: #000000;
+    }
+    .light-mode .header {
+      background-color: rgb(25, 25, 25);
+      color: #ffffff;
+    }
+    .section {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      animation: fadeInUp 1s ease-in-out forwards;
+    }
+    .dark-mode .section {
+      background-color: #333;
+    }
+    .section h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .section p {
+      margin-bottom: 1rem;
+    }
+    .team-member {
+      position: relative;
+      overflow: hidden;
+      opacity: 0;
+      animation: fadeInUp 1.5s ease-in-out forwards; /* Slower fade-in for team members */
+    }
+    .team-member img {
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+    .team-member img:hover {
+      transform: scale(1.05);
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .section:nth-child(1) {
+      animation-delay: 0.5s;
+    }
+    .section:nth-child(2) {
+      animation-delay: 1s;
+    }
+    .section:nth-child(3) {
+      animation-delay: 1.5s;
+    }
+    .section:nth-child(4) {
+      animation-delay: 2s;
+    }
+    .team-member:nth-child(1) {
+      animation-delay: 2.5s;
+    }
+    .team-member:nth-child(2) {
+      animation-delay: 3s;
+    }
+    .team-member:nth-child(3) {
+      animation-delay: 3.5s;
+    }
+    .team-member:nth-child(4) {
+      animation-delay: 4s;
+    }
+  </style>
+</head>
+<body>
+  <header class="header p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold">AK PO</h1>
+      <nav>
+        <ul class="hidden md:flex space-x-4">
+          <li><a class="hover:underline" href="index.html">Home</a></li>
+        </ul>
+        <button id="menu-btn" class="md:hidden text-2xl">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button id="theme-toggle" class="ml-4 text-2xl">
+          <i class="fas"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <div id="mobile-menu" class="hidden md:hidden p-4">
+    <ul class="space-y-4">
+      <li><a class="hover:underline" href="index.html">Home</a></li>
+    </ul>
+  </div>
+  <main class="container mx-auto p-4">
+    <h2 class="text-2xl font-bold mb-4">About Us</h2>
+    <div class="section">
+      <h3>Wat jullie hebben geleerd over de geologische geschiedenis van het Caribisch gebied</h3>
+      <p>In deze sectie kunnen jullie beschrijven wat jullie hebben geleerd over de geologische geschiedenis van het Caribisch gebied. Bijvoorbeeld, hoe de verschillende geologische formaties zijn ontstaan, welke processen hierbij betrokken waren, en wat de belangrijkste kenmerken van deze formaties zijn.</p>
+    </div>
+    <div class="section">
+      <h3>Hoe AI jullie heeft geholpen bij deze opdracht</h3>
+      <p>In deze sectie kunnen jullie uitleggen hoe AI jullie heeft geholpen bij deze opdracht. Bijvoorbeeld, hoe AI-tools zijn gebruikt om informatie te verzamelen, te analyseren en te presenteren. Ook kunnen jullie beschrijven hoe AI heeft bijgedragen aan het verbeteren van de nauwkeurigheid en efficiëntie van jullie werk.</p>
+    </div>
+    <div class="section">
+      <h3>Wat goed ging en wat verbeterd kon worden</h3>
+      <p>In deze sectie kunnen jullie reflecteren op wat goed ging tijdens de opdracht en wat verbeterd kon worden. Bijvoorbeeld, welke methoden en technieken succesvol waren, welke uitdagingen jullie tegenkwamen, en hoe jullie deze uitdagingen hebben overwonnen. Ook kunnen jullie suggesties doen voor toekomstige verbeteringen.</p>
+    </div>
+    <div class="section" style="animation-delay: 2.5s;">
+      <h3>Ons Team</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="team-member text-center" style="animation-delay: 3s;">
+          <img src="Jean.png" alt="Team Member 1" class="w-32 h-32 rounded-full mx-auto mb-2">
+          <h4 class="text-xl font-bold">Jeannuar De Kort</h4>
+          <p>Web Developer/Web Designer</p>
+        </div>
+        <div class="team-member text-center" style="animation-delay: 3.5s;">
+          <img src="Nathan.png" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto mb-2">
+          <h4 class="text-xl font-bold">Nathan Balgobind</h4>
+          <p>Tracker/Logger</p>
+        </div>
+        <div class="team-member text-center" style="animation-delay: 4s;">
+          <img src="Westson.png" alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto mb-2">
+          <h4 class="text-xl font-bold">Westson Reyes</h4>
+          <p>researcher/visualizer</p>
+        </div>
+        <div class="team-member text-center" style="animation-delay: 4.5s;">
+          <img src="Teyshawn.png" alt="Team Member 4" class="w-32 h-32 rounded-full mx-auto mb-2">
+          <h4 class="text-xl font-bold">Teyshawn Wong</h4>
+          <p>researcher/visualizer</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    
+    function applyTheme(mode) {
+      if (mode === 'dark') {
+        body.classList.add('dark-mode');
+        body.classList.remove('light-mode');
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+      } else {
+        body.classList.add('light-mode');
+        body.classList.remove('dark-mode');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+      }
+      localStorage.setItem('theme', mode);
+    }
+    
+    themeToggle.addEventListener('click', () => {
+      const newTheme = body.classList.contains('dark-mode') ? 'light' : 'dark';
+      applyTheme(newTheme);
+    });
+    
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    window.addEventListener('load', () => {
+      document.body.style.opacity = 1;
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      applyTheme(savedTheme);
+    });
+
+    window.addEventListener('beforeunload', () => {
+      document.body.style.opacity = 0;
+    });
+  </script>
+</body>
+</html>
