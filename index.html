@@ -13,6 +13,7 @@
       font-family: 'Roboto', sans-serif;
       opacity: 0;
       transition: opacity 1s ease, background-color 0.5s ease, color 0.5s ease;
+      background-color: #f0f4f8;
     }
     .hover-effect:hover {
       transform: scale(1.05);
@@ -40,13 +41,16 @@
     .article-bg {
       transition: background-color 0.5s ease, color 0.5s ease;
       border-radius: 20px; /* Increased border-radius */
+      background-color: #ffffff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .dark-mode .article-bg {
       background-color: #0c0c0c;
       color: #ffffff;
     }
     .light-mode .article-bg {
-      background-color: #f9f9f9;
+      background-color: #ffffff;
       color: #000000;
     }
     .article-fade-in {
@@ -99,6 +103,22 @@
     .article-img:hover {
       transform: scale(1.05);
     }
+    .article-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .article-description {
+      margin-bottom: 1rem;
+    }
+    .article-link {
+      color: #1d4ed8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .article-link:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -128,57 +148,57 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       <article class="article-bg p-4 rounded shadow article-fade-in">
         <img src="Processen.png" alt="New Article Image" class="article-img mb-2">
-        <h3 class="text-xl font-bold mb-2">Tectonische en Geologische Ontwikkeling van Aruba</h3>
-        <p>Informatie over Aruba's gesteenten en geschiedenis.</p>
-        <a href="article8.html" class="text-blue-500 hover:underline">Lees Verder</a>
+        <h3 class="article-title">Tectonische en Geologische Ontwikkeling van Aruba</h3>
+        <p class="article-description">Informatie over Aruba's gesteenten en geschiedenis.</p>
+        <a href="article8.html" class="article-link">Lees Verder</a>
       </article>
       <article class="article-bg p-4 rounded shadow article-fade-in">
         <img src="Formation.png" alt="New Article Image" class="article-img mb-2">
-        <h3 class="text-xl font-bold mb-2">geologische kenmerken van Aruba</h3>
-        <p>Informatie over gesteenten van Aruba.</p>
-        <a href="article9.html" class="text-blue-500 hover:underline">Lees Verder</a>
+        <h3 class="article-title">Geologische kenmerken van Aruba</h3>
+        <p class="article-description">Informatie over gesteenten van Aruba.</p>
+        <a href="article9.html" class="article-link">Lees Verder</a>
       </article>
       <article class="article-bg p-4 rounded shadow article-fade-in">
         <img src="Aruba.png" alt="New Article Image" class="article-img mb-2">
-        <h3 class="text-xl font-bold mb-2">Geologische geschiedenis van Aruba</h3>
-        <p>Informatie over het geschiedenis van Aruba</p>
-        <a href="article7.html" class="text-blue-500 hover:underline">Lees Verder</a>
+        <h3 class="article-title">Geologische geschiedenis van Aruba</h3>
+        <p class="article-description">Informatie over het geschiedenis van Aruba</p>
+        <a href="article7.html" class="article-link">Lees Verder</a>
       </article>
       <article class="article-bg p-4 rounded shadow article-fade-in">
         <img src="Oorsprong.png" alt="New Article Image" class="article-img mb-2">
-        <h3 class="text-xl font-bold mb-2">Oorsprong van het Caribisch gebied</h3>
-        <p>Informatie over het Caribisch gebied.</p>
-        <a href="article6.html" class="text-blue-500 hover:underline">Lees Verder</a>
+        <h3 class="article-title">Oorsprong van het Caribisch gebied</h3>
+        <p class="article-description">Informatie over het Caribisch gebied.</p>
+        <a href="article6.html" class="article-link">Lees Verder</a>
       </article>
       <article class="article-bg p-4 rounded shadow article-fade-in">
         <img src="ALF.png" alt="Article 1 Image" class="article-img mb-2">
-        <h3 class="text-xl font-bold mb-2">Aruba Lava Formatie (ALF)</h3>
-        <p>Informatie over Aruba's Lava Formatie (ALF).</p>
-        <a href="article1.html" class="text-blue-500 hover:underline">Lees Verder</a>
+        <h3 class="article-title">Aruba Lava Formatie (ALF)</h3>
+        <p class="article-description">Informatie over Aruba's Lava Formatie (ALF).</p>
+        <a href="article1.html" class="article-link">Lees Verder</a>
       </article>
       <article class="article-bg p-4 rounded shadow article-fade-in">
         <img src="Batholiet.png" alt="Article 2 Image" class="article-img mb-2">
-        <h3 class="text-xl font-bold mb-2">Aruba Batholiet</h3>
-        <p>Informatie over Aruba's Batholiet.</p>
-        <a href="article2.html" class="text-blue-500 hover:underline">Lees Verder</a>
+        <h3 class="article-title">Aruba Batholiet</h3>
+        <p class="article-description">Informatie over Aruba's Batholiet.</p>
+        <a href="article2.html" class="article-link">Lees Verder</a>
       </article>
       <article class="article-bg p-4 rounded shadow article-fade-in">
         <img src="Kalksteen.png" alt="Article 3 Image" class="article-img mb-2">
-        <h3 class="text-xl font-bold mb-2">Kalksteen</h3>
-        <p>Informatie over Kalksteen.</p>
-        <a href="article3.html" class="text-blue-500 hover:underline">Lees Verder</a>
+        <h3 class="article-title">Kalksteen</h3>
+        <p class="article-description">Informatie over Kalksteen.</p>
+        <a href="article3.html" class="article-link">Lees Verder</a>
       </article>
       <article class="article-bg p-4 rounded shadow article-fade-in">
         <img src="Mariene.png" alt="Article 4 Image" class="article-img mb-2">
-        <h3 class="text-xl font-bold mb-2">Mariene Terrassen</h3>
-        <p>Informatie over Mariene Terrassen.</p>
-        <a href="article4.html" class="text-blue-500 hover:underline">Lees Verder</a>
+        <h3 class="article-title">Mariene Terrassen</h3>
+        <p class="article-description">Informatie over Mariene Terrassen.</p>
+        <a href="article4.html" class="article-link">Lees Verder</a>
       </article>
       <article class="article-bg p-4 rounded shadow article-fade-in">
         <img src="Ijstijd.png" alt="Article 5 Image" class="article-img mb-2">
-        <h3 class="text-xl font-bold mb-2">Opheffing en IJstijden</h3>
-        <p>informatie over Opheffing en IJstijden.</p>
-        <a href="article5.html" class="text-blue-500 hover:underline">Lees Verder</a>
+        <h3 class="article-title">Opheffing en IJstijden</h3>
+        <p class="article-description">informatie over Opheffing en IJstijden.</p>
+        <a href="article5.html" class="article-link">Lees Verder</a>
       </article>
     </div>
   </main>
